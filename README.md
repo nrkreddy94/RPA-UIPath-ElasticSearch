@@ -12,7 +12,8 @@ These configurations can be done from web.config file. This file available in (C
 ```xml 
 <logger name="Robot.*" writeTo="database,robotElasticBuffer" final="true" />
 <target name="robotElasticBuffer" xsi:type="BufferingWrapper" flushTimeout="5000">
-<target xsi:type="ElasticSearch" name="robotElastic" uri="uritoelasticsearchnode" index="${event-properties:item=indexName}-${date:format=yyyy.MM}" documentType="logEvent" includeAllProperties="true" layout="${message}" excludedProperties="agentSessionId,tenantId,organizationId,indexName" />
+<target xsi:type="ElasticSearch" name="robotElastic" uri="uritoelasticsearchnode" index="${event-properties:item=indexName}-${date:format=yyyy.MM}"
+        documentType="logEvent" includeAllProperties="true" layout="${message}" excludedProperties="agentSessionId,tenantId,organizationId,indexName" />
 </target>
 </target>
 ```
