@@ -47,9 +47,11 @@ Discover:
 
 
 ElasticSearch URL: http://localhost:9200/
+
 ![ElasticSerachHost](/ElasticSerachHost.PNG)   
 
 Logstash URL: http://localhost:9600/
+
 ![LogstashHost](/LogstashHost.PNG)
 
 ### ELK Environment Setup
@@ -72,7 +74,7 @@ Once download Elasticsearch, Kibana, Logstash and Filebeat, just replace the fil
 Run the below windows batch script files to start ELK.
 1) elastic_search_start.bat - Start Elasticsearch
 2) kibana_start.bat - Start Kibana
-3) logstash_start_generic.bat - Start Logstash (just for testing )
+3) logstash_start_generic.bat - Start Logstash ( just for testing )
 4) logstash_start_uipath_execution.bat - Start Logstash to push uipath robot execution logs to Elasticsearch
 5) filebeat_start.bat - Start filebeat to update changes to Logstash
 
